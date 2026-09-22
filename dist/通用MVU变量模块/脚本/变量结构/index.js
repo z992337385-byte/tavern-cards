@@ -1,2 +1,0 @@
-import{registerMvuSchema as r}from'https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/util/mvu_zod.js';const t=z,e=t.z.object({当前主角:t.z.string().prefault(''),当前日期:t.z.string(),角色:t.z.record(t.z.string().describe('角色名'),t.z.object({好感度:t.z.coerce.number().transform(r=>_.clamp(r,0,100)),心情:t.z.enum(['开心','平静','想念','低落','烦躁']),想法:t.z.string()})),近况:t.z.string().prefault('')});$(()=>{r(e)});
-//# sourceMappingURL=index.js.map
